@@ -1,1 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #1f2e88;
+}
+
+.container {
+    max-width: 500px;
+    background-color: #fff;
+    margin: 50px auto;
+    border-radius: 5px;
+    border: 1px solid #f3f3f3;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.container .form {
+    display: flex;
+}
+
+.container .form .input-value {
+    flex: 0 0 85%;
+    padding: 0 15px;
+    font-size: 18px;
+}
+
+.container .form .add-item {
+    flex: 0 0 15%;
+    padding: 0;
+    font-size: 45px;
+    background-color: #135797;
+    color: #fff;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+ul.list {
+    margin-top: 30px;
+    list-style: none;
+}
+
+ul.list li {
+    list-style: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3;
+    border-top: 1px solid #135797;
+    border-bottom: 1px solid #135797;
+}
+
+ul.list li.green {
+    background-color: #008000;
+    color: #fff;
+}
+
+ul.list li.green .buttons .done {
+    display: none;
+}
+
+ul.list li .buttons {
+    margin-left: 30px;
+    display: flex;
+}
+
+ul.list li p {
+    font-size: 20px;
+    font-weight: 500;
+    width: 100%;
+}
+
+ul.list li .buttons .delete,
+ul.list li .buttons .done {
+    display: block;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+ul.list li .buttons .delete {
+    background-color: #ff0000;
+    margin-right: 15px;
+}
+
+ul.list li .buttons .done {
+    background-color: #135797;
+}
+
+@media(max-width:550px){
+    ul.list li {
+        display:block;
+    }
+    
+    ul.list li .buttons {
+        flex: 0 0 auto;
+    }
+    
+    ul.list li p {
+        flex: 0 0 auto;
+    }
+}
+
 
